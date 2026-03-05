@@ -1,4 +1,4 @@
-module github.com/nroyalty/boxify
+module github.com/nolenroyalty/boxify
 
 go 1.24.2
 
