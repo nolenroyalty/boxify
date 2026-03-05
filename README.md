@@ -15,12 +15,6 @@ echo "hello world" | boxify
 boxify somefile.txt
 ```
 
-```
-╭─────────────╮
-│ hello world │
-╰─────────────╯
-```
-
 ### Options
 
 `--border STYLE` — border style (default: `rounded`). Available styles: `normal`, `rounded`, `block`, `outer-half`, `inner-half`, `thick`, `double`, `hidden`, `markdown`, `ascii`.
@@ -30,10 +24,17 @@ boxify somefile.txt
 ### Examples
 
 ```
+echo "hello world" | boxify
+╭─────────────╮
+│ hello world │
+╰─────────────╯
+
+
 echo "fancy" | boxify --border double
 ╔═══════╗
 ║ fancy ║
 ╚═══════╝
+
 
 echo "roomy" | boxify --padding 2,4
 ╭─────────────╮
